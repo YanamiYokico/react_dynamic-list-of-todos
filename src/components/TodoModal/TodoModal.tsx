@@ -22,8 +22,8 @@ export const TodoModal: React.FC<Props> = ({ todo, onClose }) => {
     }
   }, [todo]);
 
-  if (!todo) {
-    return;
+  if (todo === null) {
+    return null;
   }
 
   return (
